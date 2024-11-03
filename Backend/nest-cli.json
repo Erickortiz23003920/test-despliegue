@@ -3,6 +3,12 @@
   "collection": "@nestjs/schematics",
   "sourceRoot": "src",
   "compilerOptions": {
+    "webpack": true,
+    "webpackConfigPath": "webpack.config.js",
+    "assets": [
+      "**/*.hbs"
+    ],
+    "watchAssets": true,
     "deleteOutDir": true
   }
 }
